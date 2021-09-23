@@ -1,0 +1,92 @@
+header {
+  background: black;
+  height: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+header nav .part {
+  align-self: center;
+}
+header nav .part a {
+  margin-right: 1rem;
+}
+
+.body {
+  display: flex;
+}
+.body .side-bar {
+  width: 7rem;
+  background: black;
+  position: fixed;
+  height: 100vh;
+  padding-top: 4rem;
+}
+.body .side-bar .side-bar-content {
+  overflow-y: auto;
+  height: 100%;
+}
+.body .side-bar .side-bar-content::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.body .side-bar .side-bar-content .side-bar-item {
+  width: 7rem;
+  height: 7rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-top: 1px solid white;
+}
+.body .side-bar .side-bar-content .side-bar-item svg path {
+  stroke: "white";
+}
+.body .content {
+  width: 100%;
+  margin-left: 7rem;
+}
+.body .content .content-header {
+  height: 4rem;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 0px 20px;
+}
+.body .content .content-header .header-greeting {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.body .content .content-header .header-toolbar {
+  font-size: 15px;
+  color: #afafaf;
+}
+.body .content .content-header .header-toolbar span {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.body .content .content-body {
+  height: calc(100vh - 4rem);
+}
+
+/**
+*************Utils
+*/
+/*Header DropDown*/
+/**/
+/*Modal*/
+.custom-modal .modal-dialog .modal-content {
+  border: 1px solid white;
+  border-radius: 0px;
+  color: white;
+  background-color: #202020;
+}
+.custom-modal .modal-dialog .modal-content #modalchart {
+  height: 80vh;
+}
+
+/**/
+/**/

@@ -1,0 +1,122 @@
+$primary-color: #091329;
+$primary-light-color:#37C4E9;
+$secondary-color:white;
+$background-color:#202020;
+
+
+$sideBarWidth:7rem;
+$normalFontSize:1.2rem;
+$headerTop:4rem;
+header {
+    background: black;
+    height: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        .part{
+            align-self: center;
+            a{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+.body {
+    display: flex;
+    .side-bar{
+        width: $sideBarWidth;
+        background: black;
+        position: fixed;
+        height: 100vh;
+        padding-top: $headerTop;
+        
+        .side-bar-content{
+            overflow-y: auto;
+            height: 100%;
+            &::-webkit-scrollbar{
+                width: 0px;
+                background: transparent;
+            }
+            .side-bar-item{
+                width: $sideBarWidth;
+                height: $sideBarWidth;
+                //margin-bottom: .1rem;
+                //background: $primary-color;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                border-top: 1px solid white;
+    
+                svg{
+                    path{
+                        stroke:'white';
+                    }
+                }
+                // &.active{
+                //     svg{
+                //         path{
+                //             stroke:$primary-light-color;
+                //         }
+                //     }
+                // }
+            }
+        }
+      
+    }
+    .content{
+        // background-color: $background-color;
+        width: 100%;
+        margin-left: $sideBarWidth;
+        .content-header{
+            height: $headerTop;
+            align-items: center;
+            background-color: #fafafa;
+            padding: 0px 20px;
+            .header-greeting{
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            .header-toolbar{
+                // display: flex;
+                font-size: 15px;
+                color: #afafaf;
+                span{
+                    margin-left: .5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        .content-body{
+            height: calc(100vh - 4rem);
+        }
+    }
+    
+    
+}
+/**
+*************Utils
+*/
+/*Header DropDown*/
+
+/**/
+/*Modal*/
+.custom-modal{
+    
+    .modal-dialog{
+        .modal-content{
+            border: 1px solid white;
+            border-radius: 0px;
+            color: white;
+            background-color: $background-color;
+            #modalchart{
+                height: 80vh;
+            }
+        }
+    }
+}
+/**/
+/**/
