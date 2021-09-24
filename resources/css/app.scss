@@ -124,6 +124,99 @@ header {
                     width: 100%;
                 }
             }
+            .market-body{
+                border-top: 1px solid #aeaeae;
+                margin: 0px;
+                .market-quotes{
+                    background-color: white;
+                    // margin-left: 1rem;
+                    border-left: 1px solid #aeaeae;
+                    border-right: 1px solid #aeaeae;
+                    padding: .5rem;
+                    text-align: -webkit-center;
+                    font-size: 20px;
+                    .market-quotes-button{
+                        width: 10rem;
+                        border: 1px solid #aeaeae;
+                        margin-top: 1rem;
+                        border-radius: 1rem;
+                        font-size: 15px;
+                        background-color: #fafafa;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #B6E0DD33;
+
+                        }
+                    }
+                }
+                .market-list{
+                    // margin-left: 1rem;
+                    height: calc(100vh - 4rem);
+                    padding: .5rem;
+                    .market-list-row{
+                        overflow-y: auto;
+                        height: 100%;
+                        margin: 0px;
+                        .market-list-panel{
+                            padding: .5rem;
+                            .market-list-panel-content{
+                                background-color: white;
+                                border-radius: 1rem;
+                                padding: .5rem;
+                                .market-list-panel-header{
+                                    margin-bottom: .5rem;
+                                    font-size: 25px;
+                                    font-weight: 700;
+                                }
+                                .market-list-panel-item{
+                                    border-radius: 1rem;
+                                    border: 1px solid #aeaeae;
+                                    background-color: white;
+                                    padding: .5rem;
+                                    margin-bottom: .5rem;
+                                    align-items: center;
+                                    cursor: pointer;
+    
+                                    .market-list-panel-item-title{
+                                        align-items: center;
+                                        .market-list-panel-item-title-img{
+                                            margin-right: 0.3rem;
+                                        }
+                                        .market-list-panel-item-title-str{
+                                            .description{
+                                                opacity: .5;
+                                            }
+                                        }
+                                    }
+                                    .market-list-panel-item-fav{
+                                        align-items: center;
+    
+                                        .market-list-panel-item-fav-percent{
+                                            color: #0DD72E;
+                                            margin-right: .3rem;
+                                        }
+                                        .market-list-panel-item-fav-check{
+                                            border-radius: 50%;
+                                            width: 1.5rem;
+                                            height: 1.5rem;
+                                            border: 1px solid #b9b9b9;
+                                            cursor: pointer;
+                                            &.active{
+                                                background-color: #0DD72E;
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        background-color: #B6E0DD33;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
         }
     }
     

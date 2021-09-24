@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'MainController@index');
+Route::get('/market', 'MarketController@index');
 Route::get('/post','PostController@index');
 
