@@ -62,7 +62,7 @@
         <div class="body">
             <div class="side-bar">
                 <div class="side-bar-content">
-                    <div class="side-bar-item">
+                    <div class="side-bar-item algo" id="human-idea">
                         <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.1698 44.4905C33.6282 45.2843 34.6527 45.5588 35.4465 45.1005L41.22 41.7672C42.0139 41.3088 42.2884 40.2843 41.8301 39.4905L40.9967 38.0471L32.3365 43.0471L33.1698 44.4905ZM21.6666 14.5663C16.0952 17.783 14.1797 24.9319 17.3963 30.5033C19.3797 33.9385 22.8389 35.9635 26.5098 36.2883L28.3931 39.5503C28.8514 40.3442 29.876 40.6187 30.6698 40.1603L39.3301 35.1603C40.1239 34.702 40.3985 33.6775 39.9401 32.8836L38.0568 29.6216C39.611 26.2802 39.5869 22.2719 37.6036 18.8366C34.3869 13.2652 27.238 11.3497 21.6666 14.5663ZM34.3034 29.7872L36.22 33.1069L30.4465 36.4403L28.5299 33.1205C25.4443 32.8427 22.3914 32.4884 20.2831 28.8366C17.9831 24.8529 19.3496 19.7531 23.3333 17.4531C27.317 15.1531 32.4168 16.5196 34.7168 20.5033C36.7918 24.0973 35.579 27.0299 34.3034 29.7872Z" fill="#FAFF00"/>
                             <line x1="13.076" y1="27.4942" x2="0.0760289" y2="29.4942" stroke="#FAFF00"/>
@@ -71,7 +71,7 @@
                             <line x1="32.4903" y1="1.09806" x2="30.4903" y2="11.0981" stroke="#FAFF00"/>
                         </svg>
                     </div>
-                    <div class="side-bar-item">
+                    <div class="side-bar-item algo" id="bot-idea">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear)"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1699 13V28H26.6699L14.1699 13Z" fill="url(#paint1_linear)"/>
@@ -375,7 +375,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <script src="{{asset('js/sidebar.js')}}"></script> -->
+    <script src="{{asset('js/sidebar.js')}}"></script>
 
     @yield('script')
 </html>

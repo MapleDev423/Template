@@ -49,11 +49,11 @@ header nav .part a {
 .body .content {
   width: 100%;
   margin-left: 7rem;
+  background-color: #fafafa;
 }
 .body .content .content-header {
   height: 4rem;
   align-items: center;
-  background-color: #fafafa;
   padding: 0px 20px;
 }
 .body .content .content-header .header-greeting {
@@ -70,6 +70,43 @@ header nav .part a {
 }
 .body .content .content-body {
   height: calc(100vh - 4rem);
+}
+.body .content .content-body .chart-body {
+  height: 100%;
+}
+.body .content .content-body .chart-body .algo-list {
+  margin: 0px 0.4rem 0.4rem 0.4rem;
+}
+.body .content .content-body .chart-body .algo-list .algo-list-header {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.body .content .content-body .chart-body .algo-list .algo-list-body {
+  overflow-y: auto;
+  height: calc(100vh - 5rem - 30px);
+}
+.body .content .content-body .chart-body .algo-list .algo-list-body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.body .content .content-body .chart-body .algo-list .algo-list-body .algo-list-content .algo-list-item {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid;
+  min-width: 17rem;
+  cursor: pointer;
+  background-color: white;
+}
+.body .content .content-body .chart-body .algo-list .algo-list-body .algo-list-content .algo-list-item.sell {
+  border-color: #73C6BE;
+}
+.body .content .content-body .chart-body .algo-list .algo-list-body .algo-list-content .algo-list-item.buy {
+  border-color: #C67373;
+}
+.body .content .content-body .chart-body .chart-panel {
+  border: 1px solid #aeaeae;
+  width: 100%;
 }
 
 /**

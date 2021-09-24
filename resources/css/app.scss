@@ -43,8 +43,6 @@ header {
             .side-bar-item{
                 width: $sideBarWidth;
                 height: $sideBarWidth;
-                //margin-bottom: .1rem;
-                //background: $primary-color;
                 align-items: center;
                 display: flex;
                 justify-content: center;
@@ -56,13 +54,6 @@ header {
                         stroke:'white';
                     }
                 }
-                // &.active{
-                //     svg{
-                //         path{
-                //             stroke:$primary-light-color;
-                //         }
-                //     }
-                // }
             }
         }
       
@@ -71,10 +62,11 @@ header {
         // background-color: $background-color;
         width: 100%;
         margin-left: $sideBarWidth;
+        background-color: #fafafa;
         .content-header{
             height: $headerTop;
             align-items: center;
-            background-color: #fafafa;
+            
             padding: 0px 20px;
             .header-greeting{
                 font-size: 20px;
@@ -92,6 +84,46 @@ header {
         }
         .content-body{
             height: calc(100vh - 4rem);
+            .chart-body{
+                height: 100%;
+                .algo-list{
+                    margin: 0px .4rem .4rem .4rem;
+                    .algo-list-header{
+                        font-size: 30px;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
+                    .algo-list-body{
+                        overflow-y: auto;
+                        height: calc(100vh - 5rem - 30px);
+                        &::-webkit-scrollbar{
+                            width: 0px;
+                            background: transparent;
+                        }
+                        .algo-list-content{
+                            .algo-list-item{
+                                padding:.5rem;
+                                margin-bottom: .5rem;
+                                border:1px solid;
+                                min-width: 17rem;
+                                cursor: pointer;
+                                background-color: white;
+                                &.sell{
+                                    border-color: #73C6BE;
+                                }
+                                &.buy{
+                                    border-color: #C67373;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .chart-panel{
+                    border: 1px solid #aeaeae;
+                    width: 100%;
+                }
+            }
         }
     }
     
